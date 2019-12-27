@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <load-pdf ></load-pdf>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LoadPdf from './components/loadPdf'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    LoadPdf
   }
 }
 </script>
@@ -24,5 +23,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+canvas {
+  border: 1px dashed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 </style>
